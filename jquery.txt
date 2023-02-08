@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .button2{
+background-color: aqua;
+color: black;
+padding: 30px;
+text-align: center;
+padding-left: left;
+
+
+        }
+        .button1{
+            background-color: blue;
+            color: yellow;
+            padding: 50px;
+            display: none ;
+        
+        }
+        .button1:hover{
+            background-color: bisque;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="button2">click to slide panal</button><br>
+    <button class="button1">hello world</button>
+</body>
+<script>
+    $(document).ready(function()
+    {
+        $(".button2").click(function()
+        {
+            $(".button1").slideDown(2000);
+            $(".button1").slideUp(2000);
+            $(".button1").slideToggle("slow");
+        });
+
+    });
+
+    
+</script>
+</html>
